@@ -1,4 +1,4 @@
-package com.example.project9.ui.theme
+package com.example.project9.ui.viewmodel
 
 import android.app.Application
 import com.example.project9.Dependenciesinjection.ContainerApp
