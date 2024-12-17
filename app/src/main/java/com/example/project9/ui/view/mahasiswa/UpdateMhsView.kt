@@ -68,3 +68,24 @@ fun UpdateMhsView(
                 .fillMaxSize()
                 .padding(16.dp)
         ){
+            InsertBodyMhs(
+                uiState = uiState,
+                onValueChange = { updatedEvent ->
+                    viewModel.updateState(updatedEvent) // Update State Pada ViewModel
+                },
+                onClick = {
+                    coroutineScope.launch {
+                        if (viewModel.validateFields()) {
+                            viewModel.updateData()
+                            delay(600)
+                            withContext(Dispatchers.Main) {
+                                onNavigate() // Navigasi Di Main Thread
+                            }
+                        }
+                    }
+                }
+            )
+        }
+    }
+}
+        }
