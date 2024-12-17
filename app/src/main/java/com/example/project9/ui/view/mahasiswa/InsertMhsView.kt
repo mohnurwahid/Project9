@@ -28,9 +28,7 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.project9.ui.customwidget.TopAppBar
-
 import com.example.project9.ui.navigation.AlamatNavigasi
-
 import com.example.project9.ui.viewmodel.FormErrorState
 import com.example.project9.ui.viewmodel.MahasiswaEvent
 import com.example.project9.ui.viewmodel.MahasiswaViewModel
@@ -242,5 +240,4 @@ fun InsertMhsView(
             )
         }
     }
-
 }
